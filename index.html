@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+        
+<script src='js/index.js'></script>
+<style> 
+body {
+background-image: url("http://www.govivigo.com/content/upload/images/Similan/similan_2.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-attachment: fixed;
+ background-position: center;
+
+}
+
+ </style> 
+</head>
+
+<body onload="getBeersAPI()">
+
+        
+ 
+    
+<div align="center">
+<h1>
+        Punk Api
+</h1>
+<h2>
+        Beers Search
+                
+</h2>
+<h4>beers are 25 item</h4>
+</br>
+<input type="text" id="name"placeholder="name"/>
+</br>
+<input type="text" id="yeast" placeholder="yeast" />
+</br>
+<button onclick="getBeerAPIByName(getElementById('name').value,getElementById('yeast').value)">Search</button>
+</div>
+
+</br></br></br>
+<div id="result" align="center">
+</div>
+</body>
+
